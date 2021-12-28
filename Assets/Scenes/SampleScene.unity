@@ -225,7 +225,6 @@ GameObject:
   - component: {fileID: 855550634}
   - component: {fileID: 855550633}
   - component: {fileID: 855550632}
-  - component: {fileID: 855550636}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -308,24 +307,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &855550636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855550631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6236277e377494d96963621afcf52775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.02
-  spriteRenderer: {fileID: 1337617261}
-  idleSprite: {fileID: 21300000, guid: d9a32de576a5446b2b7d281d2cb3fb1c, type: 3}
-  moveSprite: {fileID: 21300000, guid: 327a26b383014484fab9a452a8c7fc61, type: 3}
-  moveForwardSprite: {fileID: 21300000, guid: 327a26b383014484fab9a452a8c7fc61, type: 3}
-  moveBackwardSprite: {fileID: 21300000, guid: 579e7d2cc6c664d3aa1f79d7f8ee8f28, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +401,7 @@ GameObject:
   - component: {fileID: 1337617262}
   - component: {fileID: 1337617261}
   - component: {fileID: 1337617264}
+  - component: {fileID: 1337617263}
   m_Layer: 0
   m_Name: PlayerAvatar
   m_TagString: Untagged
@@ -492,6 +474,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1337617263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337617260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6236277e377494d96963621afcf52775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.01
+  spriteRenderer: {fileID: 1337617261}
 --- !u!95 &1337617264
 Animator:
   serializedVersion: 3

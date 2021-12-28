@@ -15,7 +15,6 @@ public class PlayerBehaviour : MonoBehaviour
     {
         state = GetComponent<IdleState>();
         animator = GetComponent<Animator>();
-        Debug.Log(state);
     }
 
     // Update is called once per frame
